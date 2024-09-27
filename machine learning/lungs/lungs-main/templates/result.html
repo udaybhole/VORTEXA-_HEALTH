@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lung Cancer Prediction Result</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+            text-align: center; /* Center text */
+        }
+        h1 {
+            color: #333;
+        }
+        p {
+            font-size: 20px;
+            color: #5cb85c;
+        }
+        a {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 15px;
+            background-color: #5cb85c;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        a:hover {
+            background-color: #4cae4c;
+        }
+        .report-section {
+            margin-top: 20px;
+            text-align: left; /* Align text to the left */
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <h1>Lung Cancer Prediction Result</h1>
+    
+    {% if prediction == 'Yes' %}
+        <p>Prediction: You have a high risk of lung cancer.</p>
+    {% else %}
+        <p>Prediction: You do not have lung cancer.</p>
+    {% endif %}
+
+    <div class="report-section">
+        <h2>Potential Risks and Related Lung Diseases</h2>
+        <p>Based on your provided features, here are some potential risks and related lung diseases:</p>
+        <ul>
+            <li>Chronic Obstructive Pulmonary Disease (COPD)</li>
+            <li>Emphysema</li>
+            <li>Chronic Bronchitis</li>
+            <li>Asthma</li>
+            <li>Pneumonia</li>
+            <li>Lung Fibrosis</li>
+        </ul>
+        <p>Your symptoms and history may increase the risk of developing these conditions. It is advisable to consult with a healthcare provider for a comprehensive evaluation.</p>
+    </div>
+
+    <div class="report-section">
+        <h2>Recommendations</h2>
+        <p>Based on your features and risk assessment, here are some recommendations:</p>
+        <ul>
+            <li><strong>Regular Health Check-ups:</strong> Schedule regular check-ups with a healthcare provider to monitor lung health.</li>
+            <li><strong>Smoking Cessation:</strong> If you are a smoker, consider quitting. There are various resources and programs available to assist you.</li>
+            <li><strong>Avoid Pollutants:</strong> Minimize exposure to harmful pollutants and chemicals. Use protective gear if necessary.</li>
+            <li><strong>Healthy Diet:</strong> Maintain a balanced diet rich in fruits and vegetables, which may help strengthen lung health.</li>
+            <li><strong>Physical Activity:</strong> Engage in regular physical activities, as exercise can improve lung function and overall health.</li>
+            <li><strong>Stay Informed:</strong> Educate yourself about lung health and related diseases to make informed decisions.</li>
+            <li><strong>Consider Screening:</strong> Discuss with your healthcare provider whether lung cancer screening is appropriate for you based on your risk factors.</li>
+        </ul>
+    </div>
+
+    <a href="/">Go back</a>
+</body>
+</html>

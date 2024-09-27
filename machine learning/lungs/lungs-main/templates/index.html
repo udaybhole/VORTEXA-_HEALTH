@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lung Cancer Prediction</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>Lung Cancer Prediction</h1>
+    <form method="POST" action="/predict">
+        <label for="YELLOW_FINGERS">YELLOW FINGERS:</label>
+        <div class="radio-group">
+            <input type="radio" id="yellow_fingers_yes" name="YELLOW_FINGERS" value="1" required>
+            <label for="yellow_fingers_yes">Yes</label>
+            <input type="radio" id="yellow_fingers_no" name="YELLOW_FINGERS" value="0" required>
+            <label for="yellow_fingers_no">No</label>
+        </div><br>
+
+        <label for="ANXIETY">ANXIETY:</label>
+        <div class="radio-group">
+            <input type="radio" id="anxiety_yes" name="ANXIETY" value="1" required>
+            <label for="anxiety_yes">Yes</label>
+            <input type="radio" id="anxiety_no" name="ANXIETY" value="0" required>
+            <label for="anxiety_no">No</label>
+        </div><br>
+
+        <label for="PEER_PRESSURE">PEER PRESSURE:</label>
+        <div class="radio-group">
+            <input type="radio" id="peer_pressure_yes" name="PEER_PRESSURE" value="1" required>
+            <label for="peer_pressure_yes">Yes</label>
+            <input type="radio" id="peer_pressure_no" name="PEER_PRESSURE" value="0" required>
+            <label for="peer_pressure_no">No</label>
+        </div><br>
+
+        <label for="CHRONIC_DISEASE">CHRONIC DISEASE:</label>
+        <div class="radio-group">
+            <input type="radio" id="chronic_disease_yes" name="CHRONIC_DISEASE" value="1" required>
+            <label for="chronic_disease_yes">Yes</label>
+            <input type="radio" id="chronic_disease_no" name="CHRONIC_DISEASE" value="0" required>
+            <label for="chronic_disease_no">No</label>
+        </div><br>
+
+        <label for="FATIGUE">FATIGUE:</label>
+        <div class="radio-group">
+            <input type="radio" id="fatigue_yes" name="FATIGUE" value="1" required>
+            <label for="fatigue_yes">Yes</label>
+            <input type="radio" id="fatigue_no" name="FATIGUE" value="0" required>
+            <label for="fatigue_no">No</label>
+        </div><br>
+
+        <label for="ALLERGY">ALLERGY:</label>
+        <div class="radio-group">
+            <input type="radio" id="allergy_yes" name="ALLERGY" value="1" required>
+            <label for="allergy_yes">Yes</label>
+            <input type="radio" id="allergy_no" name="ALLERGY" value="0" required>
+            <label for="allergy_no">No</label>
+        </div><br>
+
+        <label for="WHEEZING">WHEEZING:</label>
+        <div class="radio-group">
+            <input type="radio" id="wheezing_yes" name="WHEEZING" value="1" required>
+            <label for="wheezing_yes">Yes</label>
+            <input type="radio" id="wheezing_no" name="WHEEZING" value="0" required>
+            <label for="wheezing_no">No</label>
+        </div><br>
+
+        <label for="ALCOHOL_CONSUMING">ALCOHOL CONSUMING:</label>
+        <div class="radio-group">
+            <input type="radio" id="alcohol_consuming_yes" name="ALCOHOL_CONSUMING" value="1" required>
+            <label for="alcohol_consuming_yes">Yes</label>
+            <input type="radio" id="alcohol_consuming_no" name="ALCOHOL_CONSUMING" value="0" required>
+            <label for="alcohol_consuming_no">No</label>
+        </div><br>
+
+        <label for="COUGHING">COUGHING:</label>
+        <div class="radio-group">
+            <input type="radio" id="coughing_yes" name="COUGHING" value="1" required>
+            <label for="coughing_yes">Yes</label>
+            <input type="radio" id="coughing_no" name="COUGHING" value="0" required>
+            <label for="coughing_no">No</label>
+        </div><br>
+
+        <label for="SWALLOWING_DIFFICULTY">SWALLOWING DIFFICULTY:</label>
+        <div class="radio-group">
+            <input type="radio" id="swallowing_difficulty_yes" name="SWALLOWING_DIFFICULTY" value="1" required>
+            <label for="swallowing_difficulty_yes">Yes</label>
+            <input type="radio" id="swallowing_difficulty_no" name="SWALLOWING_DIFFICULTY" value="0" required>
+            <label for="swallowing_difficulty_no">No</label>
+        </div><br>
+
+        <label for="CHEST_PAIN">CHEST PAIN:</label>
+        <div class="radio-group">
+            <input type="radio" id="chest_pain_yes" name="CHEST_PAIN" value="1" required>
+            <label for="chest_pain_yes">Yes</label>
+            <input type="radio" id="chest_pain_no" name="CHEST_PAIN" value="0" required>
+            <label for="chest_pain_no">No</label>
+        </div><br>
+
+        <label for="ANXYELFIN">ANXYELFIN:</label>
+        <div class="radio-group">
+            <input type="radio" id="anxyelfin_yes" name="ANXYELFIN" value="1" required>
+            <label for="anxyelfin_yes">Yes</label>
+            <input type="radio" id="anxyelfin_no" name="ANXYELFIN" value="0" required>
+            <label for="anxyelfin_no">No</label>
+        </div><br>
+
+        <input type="submit" value="Predict">
+    </form>
+</body>
+</html>
